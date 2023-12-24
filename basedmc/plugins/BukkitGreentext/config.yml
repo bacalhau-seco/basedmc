@@ -1,0 +1,13 @@
+check-for-permission: false
+allow-orangetext: true
+enabled-by-default: true
+use-hex-colors: false
+greentext-exceptions:
+- ':'
+- _
+- .
+orangetext-exceptions:
+- ':'
+- _
+- .
+check-for-updates: true

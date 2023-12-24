@@ -1,0 +1,112 @@
+23-12-24 10:39:33 [INFO] Logger started.
+23-12-24 10:39:33 [INFO] Logging system initialized.
+23-12-24 10:39:33 [INFO] Detected Minecraft version: 1.20.2
+23-12-24 10:39:43 [INFO] McAccess set to: 1.13-1.20|? / Bukkit-API
+23-12-24 10:39:43 [INFO] Inventory checks: FastConsume is available, disabled InstantEat.
+23-12-24 10:39:43 [INFO] Adding packet level hooks for ProtocolLib (MC 1.20.2)...
+23-12-24 10:39:43 [INFO] Confirm teleport packet available (via name): TELEPORT_ACCEPT[class=PacketPlayInTeleportAccept, id=0]
+23-12-24 10:39:43 [INFO] Available (and activated) packet level hooks: UseEntityAdapter | MovingFlying | OutgoingPosition | KeepAliveAdapter | SoundDistance | WrongTurnAdapter | Fight
+23-12-24 10:39:43 [INFO] Force disable FastHeal, FastConsume, PacketFrequency and InstantBow on Minecraft 1.9 and later.
+23-12-24 10:39:43 [INFO] Version 3.17.1-SNAPSHOT-Updated-b178 is enabled.
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered (override) for itself: fr.neatmonster.nocheatplus.hooks.ExemptionSettings
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for itself: fr.neatmonster.nocheatplus.stats.Counters
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for itself: fr.neatmonster.nocheatplus.checks.workaround.WRPT
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for itself: fr.neatmonster.nocheatplus.checks.moving.location.tracking.LocationTrace$TraceEntryPool
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for itself: fr.neatmonster.nocheatplus.utilities.entity.PassengerUtil
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for itself: java.util.Random
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for fr.neatmonster.nocheatplus.compat.IBridgeCrossPlugin: fr.neatmonster.nocheatplus.compat.meta.BridgeCrossPlugin
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for fr.neatmonster.nocheatplus.compat.MCAccess: fr.neatmonster.nocheatplus.compat.bukkit.MCAccessBukkitModern
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for fr.neatmonster.nocheatplus.utilities.map.BlockCache: fr.neatmonster.nocheatplus.compat.bukkit.BlockCacheBukkitModern
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for fr.neatmonster.nocheatplus.components.modifier.IAttributeAccess: fr.neatmonster.nocheatplus.compat.bukkit.BukkitAttributeAccess
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for fr.neatmonster.nocheatplus.components.entity.IEntityAccessVehicle: fr.neatmonster.nocheatplus.compat.bukkit.EntityAccessVehicleMultiPassenger
+23-12-24 10:39:47 [INFO] [GenericInstanceRegistry] Registered for itself: fr.neatmonster.nocheatplus.checks.moving.util.AuxMoving
+23-12-24 10:39:47 [INFO] Added hook: AllViolations(NCP) [1.0].
+23-12-24 10:39:47 [INFO] Added hook: ViolationFrequency(NCP) [1.0].
+23-12-24 10:39:47 [INFO] Post-enable running...
+23-12-24 10:39:47 [INFO] Post-enable finished.
+23-12-24 10:39:47 [INFO] §c§l»Version information«§7
+§6§lServer:§7
+§7git-Purpur-2095 ~MC: 1.20.2~
+§7§eDetected: §71.20.2
+§6§lNoCheatPlus:§7
+§7§ePlugin: §73.17.1-SNAPSHOT-Updated-b178
+§7§eMCAccess: §71.13-1.20|? / Bukkit-API
+§6§lFeatures:
+§7§eblocks§7: BlocksMC1_4§f, §7BlocksMC1_5§f, §7BlocksMC1_6_1§f, §7BlocksMC1_7_2§f, §7BlocksMC1_8§f, §7BlocksMC1_9§f, §7BlocksMC1_10§f, §7BlocksMC1_11§f, §7BlocksMC1_12§f, §7BlocksMC1_13§f, §7BlocksMC1_14§f, §7BlocksMC1_15§f, §7BlocksMC1_16§f, §7BlocksMC1_17§f, §7BlocksMC1_19§f, §7BlocksMC1_20§f, §7MCAccessBukkitModern
+§7§echecks§7: FastConsume§f, §7Gutenberg§f, §7HotFixFallingBlockPortalEnter§f, §7AttackFrequency§f, §7FlyingFrequency§f, §7KeepAliveFrequency
+§7§edefaults§7: pvpKnockBackVelocity
+§7§epacket-listeners§7: UseEntityAdapter§f, §7MovingFlying§f, §7OutgoingPosition§f, §7KeepAliveAdapter§f, §7SoundDistance§f, §7WrongTurnAdapter§f, §7Fight
+§6§lHooks:
+§7AllViolations~NCP~ 1.0§f, §7ViolationFrequency~NCP~ 1.0
+§c§l»Related Plugins«§7
+§7ProtocolLib v5.1.1-SNAPSHOT-669
+23-12-24 10:42:26 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (75397.07, 159.25, -45351.42) to (75397.40, 159.71, -45352.10) over a distance of (0.89) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL103)
+23-12-24 10:42:28 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (75397.19, 147.26, -45351.71) to (75397.32, 147.88, -45352.20) over a distance of (0.80) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL910)
+23-12-24 10:42:33 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (75396.46, 134.09, -45358.21) to (75396.45, 134.67, -45358.77) over a distance of (0.81) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL966)
+23-12-24 10:42:35 [INFO] Vale402 failed CreativeFly: tried to perform a move that deviates from the model (Model: jetpack.elytra, Tags: hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL2011)
+23-12-24 10:42:36 [INFO] (CONSOLE) Kicked Vale402 : §c§l(!)§7 Moved unexpectedly.
+23-12-24 10:42:42 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (75406.99, 123.79, -45353.00) to (75407.73, 124.26, -45352.65) over a distance of (0.95) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL536)
+23-12-24 10:42:43 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (75406.99, 123.48, -45353.00) to (75407.30, 124.19, -45353.12) over a distance of (0.77) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL975)
+23-12-24 10:42:52 [INFO] bacalhau failed Improbable: is exhibiting an erratic behaviour (Check: inventory.invmove.sprinting) (VL53)
+23-12-24 10:45:33 [INFO] andrewTheIV failed CreativeFly: tried to perform an illegal move from (201145.22, 244.60, -527690.12) to (201145.33, 245.69, -527690.35) over a distance of (1.12) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+vdist) (VL109)
+23-12-24 10:45:34 [INFO] andrewTheIV failed CreativeFly: tried to perform an illegal move from (201145.22, 244.15, -527690.12) to (201145.34, 245.31, -527690.37) over a distance of (1.19) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL916)
+23-12-24 10:45:49 [INFO] ipoop failed CreativeFly: tried to perform an illegal move from (4518.01, 66.69, 1825.41) to (4517.63, 66.90, 1824.70) over a distance of (0.83) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL129)
+23-12-24 10:45:53 [INFO] andrewTheIV failed CreativeFly: tried to perform an illegal move from (201149.31, 248.19, -527693.88) to (201148.91, 248.80, -527693.48) over a distance of (0.84) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL787)
+23-12-24 10:45:53 [INFO] andrewTheIV failed CreativeFly: tried to perform an illegal move from (201149.31, 248.09, -527693.88) to (201148.91, 248.68, -527693.49) over a distance of (0.81) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL964)
+23-12-24 10:46:06 [INFO] ipoop failed SurvivalFly: tried to perform an illegal move from (4518.78, 59.17, 1779.80) to (4518.79, 59.28, 1779.68) over a distance of (0.17) blocks, subchecks triggered> (walkspeed(16)+vdistrel) (VL74)
+23-12-24 10:46:42 [INFO] ipoop failed CreativeFly: tried to perform an illegal move from (4530.27, 62.04, 1848.10) to (4530.31, 62.06, 1847.26) over a distance of (0.84) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL155)
+23-12-24 10:46:45 [INFO] ipoop failed SurvivalFly: tried to perform an illegal move from (4530.43, 61.80, 1839.82) to (4530.38, 61.00, 1839.20) over a distance of (1.01) blocks, subchecks triggered> (dirty+walkspeed_to+bunnyenv+hvel+hvel_no_hacc+vdistrel) (VL42)
+23-12-24 10:47:23 [INFO] ipoop failed CreativeFly: tried to perform an illegal move from (4336.92, 46.23, 1697.92) to (4336.95, 46.29, 1697.66) over a distance of (0.27) blocks, subchecks triggered> (hfrict+e_vasc+vdist) (VL157)
+23-12-24 10:49:41 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (742084.36, 40.68, -253920.62) to (742084.36, 41.79, -253920.62) over a distance of (1.11) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+vdist) (VL137)
+23-12-24 10:49:52 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (742087.70, 65.85, -253921.38) to (742087.71, 66.69, -253921.38) over a distance of (0.84) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+vdist) (VL592)
+23-12-24 10:50:14 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (742088.02, 64.71, -253922.59) to (742088.07, 64.87, -253923.42) over a distance of (0.85) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL547)
+23-12-24 10:50:15 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (742088.02, 64.60, -253922.60) to (742088.05, 64.81, -253923.41) over a distance of (0.83) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL917)
+23-12-24 10:50:20 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (742087.96, 65.69, -253923.05) to (742087.45, 65.86, -253924.61) over a distance of (1.65) blocks, subchecks triggered> (hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL1924)
+23-12-24 10:50:20 [INFO] Vale402 failed CreativeFly: tried to perform a move that deviates from the model (Model: jetpack.elytra, Tags: hfrict+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL2041)
+23-12-24 10:50:20 [INFO] (CONSOLE) Kicked Vale402 : §c§l(!)§7 Moved unexpectedly.
+23-12-24 10:50:59 [INFO] jg_playz failed FastClick: tried to move items in their inventory too quickly (Tags: clickspeed) (VL431)
+23-12-24 10:51:25 [INFO] ipoop failed CreativeFly: tried to perform an illegal move from (4539.44, 63.50, 1869.12) to (4539.44, 63.50, 1869.12) over a distance of (0.00) blocks, subchecks triggered> (hfrict+antilevitate+vdist) (VL15)
+23-12-24 10:54:33 [INFO] _GOLEM_ failed CreativeFly: tried to perform an illegal move from (4526.24, 64.31, 1860.00) to (4525.48, 64.58, 1859.77) over a distance of (0.83) blocks, subchecks triggered> (hfrict+bunnyhop+e_vasc+e_vdiff+e_hspeed+hdist+vdist) (VL129)
+23-12-24 10:55:02 [INFO] Reloading configuration...
+23-12-24 10:55:02 [INFO] Logger started.
+23-12-24 10:55:02 [INFO] McAccess set to: 1.13-1.20|? / Bukkit-API
+23-12-24 10:55:02 [INFO] Configuration reloaded.
+23-12-24 10:55:02 [INFO] [GenericInstanceRegistry] Registered (override) for itself: fr.neatmonster.nocheatplus.hooks.ExemptionSettings
+23-12-24 10:55:02 [INFO] [GenericInstanceRegistry] Registered (override) for fr.neatmonster.nocheatplus.compat.MCAccess: fr.neatmonster.nocheatplus.compat.bukkit.MCAccessBukkitModern
+23-12-24 10:55:02 [INFO] [GenericInstanceRegistry] Registered (override) for fr.neatmonster.nocheatplus.utilities.map.BlockCache: fr.neatmonster.nocheatplus.compat.bukkit.BlockCacheBukkitModern
+23-12-24 10:55:02 [INFO] [GenericInstanceRegistry] Registered (override) for fr.neatmonster.nocheatplus.components.modifier.IAttributeAccess: fr.neatmonster.nocheatplus.compat.bukkit.BukkitAttributeAccess
+23-12-24 10:55:02 [INFO] [GenericInstanceRegistry] Registered (override) for fr.neatmonster.nocheatplus.components.entity.IEntityAccessVehicle: fr.neatmonster.nocheatplus.compat.bukkit.EntityAccessVehicleMultiPassenger
+23-12-24 10:55:02 [INFO] Removed hook: AllViolations(NCP) [1.0].
+23-12-24 10:55:02 [INFO] Added hook: AllViolations(NCP) [1.0].
+23-12-24 10:55:02 [INFO] Removed hook: ViolationFrequency(NCP) [1.0].
+23-12-24 10:55:02 [INFO] Added hook: ViolationFrequency(NCP) [1.0].
+23-12-24 10:55:02 [INFO] Inventory checks: FastConsume is available, disabled InstantEat.
+23-12-24 10:55:02 [INFO] Adding packet level hooks for ProtocolLib (MC 1.20.2)...
+23-12-24 10:55:02 [INFO] Confirm teleport packet available (via name): TELEPORT_ACCEPT[class=PacketPlayInTeleportAccept, id=0]
+23-12-24 10:55:02 [INFO] Available (and activated) packet level hooks: UseEntityAdapter | MovingFlying | OutgoingPosition | KeepAliveAdapter | SoundDistance | WrongTurnAdapter | NoSlow | Fight
+23-12-24 10:55:02 [INFO] §c§l»Version information«§7
+§6§lServer:§7
+§7git-Purpur-2095 ~MC: 1.20.2~
+§7§eDetected: §71.20.2
+§6§lNoCheatPlus:§7
+§7§ePlugin: §73.17.1-SNAPSHOT-Updated-b178
+§7§eMCAccess: §71.13-1.20|? / Bukkit-API
+§6§lFeatures:
+§7§eblocks§7: BlocksMC1_4§f, §7BlocksMC1_5§f, §7BlocksMC1_6_1§f, §7BlocksMC1_7_2§f, §7BlocksMC1_8§f, §7BlocksMC1_9§f, §7BlocksMC1_10§f, §7BlocksMC1_11§f, §7BlocksMC1_12§f, §7BlocksMC1_13§f, §7BlocksMC1_14§f, §7BlocksMC1_15§f, §7BlocksMC1_16§f, §7BlocksMC1_17§f, §7BlocksMC1_19§f, §7BlocksMC1_20§f, §7MCAccessBukkitModern
+§7§echecks§7: FastConsume§f, §7Gutenberg§f, §7HotFixFallingBlockPortalEnter§f, §7AttackFrequency§f, §7FlyingFrequency§f, §7KeepAliveFrequency
+§7§edefaults§7: pvpKnockBackVelocity
+§7§epacket-listeners§7: UseEntityAdapter§f, §7MovingFlying§f, §7OutgoingPosition§f, §7KeepAliveAdapter§f, §7SoundDistance§f, §7WrongTurnAdapter§f, §7Fight§f, §7NoSlow
+§6§lHooks:
+§7AllViolations~NCP~ 1.0§f, §7ViolationFrequency~NCP~ 1.0
+§c§l»Related Plugins«§7
+§7ProtocolLib v5.1.1-SNAPSHOT-669
+23-12-24 10:55:58 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (107277.17, 35.01, -64616.63) to (107277.15, 35.73, -64616.75) over a distance of (0.73) blocks, subchecks triggered> (hfrict+vdist) (VL261)
+23-12-24 10:55:59 [INFO] Vale402 failed CreativeFly: tried to perform an illegal move from (107277.17, 34.46, -64616.63) to (107277.17, 35.62, -64616.63) over a distance of (1.15) blocks, subchecks triggered> (hfrict+vdist) (VL904)
+23-12-24 10:57:17 [INFO] (CONSOLE) Kicked ipoop : §c§l(!)§7 Stop spamming.
+23-12-24 11:01:06 [INFO] _GOLEM_ failed CreativeFly: tried to perform an illegal move from (4311.44, 146.00, 1706.29) to (4311.45, 146.00, 1706.49) over a distance of (0.20) blocks, subchecks triggered> (hfrict+antilevitate+vdist) (VL10)
+23-12-24 11:02:33 [INFO] _GOLEM_ failed CreativeFly: tried to perform an illegal move from (4280.72, 139.20, 1677.38) to (4280.68, 139.20, 1677.35) over a distance of (0.05) blocks, subchecks triggered> (hfrict+antilevitate+vdist) (VL10)
+23-12-24 11:04:26 [INFO] _GOLEM_ failed CreativeFly: tried to perform an illegal move from (4284.33, 111.11, 1713.48) to (4284.40, 111.83, 1713.43) over a distance of (0.73) blocks, subchecks triggered> (hfrict+vdist) (VL148)
+23-12-24 11:05:07 [INFO] ipoop failed SurvivalFly: tried to perform an illegal move from (4303.35, 56.00, 1681.30) to (4303.35, 56.75, 1681.30) over a distance of (0.75) blocks, subchecks triggered> (vdistrel) (VL318)
+23-12-24 11:05:24 [INFO] ipoop failed SurvivalFly: tried to perform an illegal move from (4299.30, 59.75, 1681.56) to (4299.30, 59.67, 1681.56) over a distance of (0.08) blocks, subchecks triggered> (vdistrel+ychdec+lowjump) (VL126)
+23-12-24 11:06:59 [INFO] ipoop failed SurvivalFly: tried to perform an illegal move from (4272.82, 64.73, 1703.36) to (4272.75, 65.04, 1703.53) over a distance of (0.36) blocks, subchecks triggered> (walkspeed+vdistrel) (VL159)
+23-12-24 11:08:00 [INFO] ipoop failed SurvivalFly: tried to perform an illegal move from (4494.29, 62.71, 1729.07) to (4494.31, 62.57, 1729.51) over a distance of (0.46) blocks, subchecks triggered> (dirty+walkspeed+bunnyenv+hvel+hvel_no_hacc+vdistrel) (VL52)
