@@ -32,12 +32,18 @@ data:
     history: false
   consistencychecks:
     active: true
-    interval: 10
+    interval: 5
     maxtime: 2
     suppresswarnings: false
 permissions:
   policy:
     default: ALWAYS
+    og: ALWAYS
+    based: ALWAYS
+    retarded: ALWAYS
+    banned1: ALWAYS
+    banned2: ALWAYS
+    banned3: ALWAYS
     rules:
     - 'nocheatplus.notify :: INTERVAL:60, -world, -offline'
     - 'nocheatplus.admin.debug :: INTERVAL:10'
@@ -471,7 +477,7 @@ checks:
       duplication:
         fallingblockendportal: true
   moving:
-    active: default
+    active: true
     creativefly:
       active: false
       ignoreallowflight: true
@@ -547,7 +553,7 @@ checks:
       actions: cancel vl>2 cancel log:morepackets:10:9:i vl>100 cancel log:morepackets:0:2:ifc
         cmdc:kickpackets:0:10
     nofall:
-      active: default
+      active: true
       dealdamage: true
       skipallowflight: true
       resetonviolation: false
@@ -580,7 +586,7 @@ checks:
           - tpyes
           - tphere
     survivalfly:
-      active: false
+      active: true
       stepheight: default
       extended:
         vertical-accounting: true
