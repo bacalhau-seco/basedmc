@@ -84,8 +84,7 @@ checks:
       delay: 10
       intervalsurvival: 100
       grace: 500
-      actions: cancel vl>5 cancel log:fastbreak:4:2:i vl>50 cancel log:fastbreak:0:2:if
-        cmdc:kickfastbreak:2:5
+      actions: vl>5 cancel log:fastbreak:4:2:i vl>50 cancel log:fastbreak:0:2:if cmdc:kickfastbreak:2:5
     frequency:
       active: default
       intervalcreative: 95
@@ -93,8 +92,8 @@ checks:
       shortterm:
         ticks: 5
         limit: 7
-      actions: cancel vl>5 log:bbfrequency:3:5:i cancel vl>40 log:bbfrequency:0:5:if
-        cancel cmdc:kickfrequency:0:5
+      actions: vl>5 log:bbfrequency:3:5:i cancel vl>40 log:bbfrequency:0:5:if cancel
+        cmdc:kickfrequency:0:5
     noswing:
       active: default
       actions: cancel vl>10 log:noswing:0:5:i cancel
@@ -107,8 +106,7 @@ checks:
       improbable:
         feedonly: false
         weight: 2.0
-      actions: cancel vl>10 log:bwrong:2:5:i cancel vl>30 cancel log:bwrong:0:5:if
-        cmdc:kickwb:0:5
+      actions: vl>10 log:bwrong:2:5:i cancel vl>30 cancel log:bwrong:0:5:if cmdc:kickwb:0:5
   blockinteract:
     active: default
     direction:
@@ -128,19 +126,19 @@ checks:
       active: default
       actions: cancel vl>30 log:bvisible:8:5:if cancel
   blockplace:
-    active: default
+    active: false
     against:
       active: default
       actions: cancel log:against:1:5:i vl>10 cancel log:against:0:2:if cmdc:kickagainst:0:10
     autosign:
-      active: default
+      active: false
       skipempty: false
       actions: cancel vl>10 log:bautosign:0:3:if cancel
     direction:
       active: default
       actions: cancel
     fastplace:
-      active: default
+      active: false
       limit: 15
       shortterm:
         ticks: 10
@@ -160,7 +158,7 @@ checks:
       - FLINT_AND_STEEL
       actions: cancel vl>10 log:noswing:2:5:i cancel
     scaffold:
-      active: default
+      active: false
       angle: true
       sprint: true
       time:
@@ -185,7 +183,7 @@ checks:
     preventmisc:
       boatsanywhere: true
   chat:
-    active: default
+    active: false
     captcha:
       active: 'false'
       skip:
@@ -231,7 +229,7 @@ checks:
       actions: log:commands:0:5:cf cancel cmdc:kickcommands vl>20 log:commands:0:5:cf
         cancel cmdc:tempkick1
     text:
-      active: default
+      active: false
       allowvlreset: true
       frequency:
         normal:
@@ -281,7 +279,7 @@ checks:
         similarity:
           active: true
     warning:
-      active: true
+      active: false
       level: 67
       message: "\n  &c&l(!)&7 Please slow down chat, you might get kicked by the antispam.\n\
         \ \n"
@@ -358,8 +356,8 @@ checks:
       active: default
       falldistance: 0.075
       falldistleniency: 9.0E-4
-      actions: cancel vl>5 cancel log:critical:6:10:i vl>60 cancel log:critical:0:5:icf
-        cmd:clearcritical:0:5 cmdc:kickcritical:0:2
+      actions: vl>3 cancel log:critical:6:10:i vl>60 cancel log:critical:0:5:icf cmd:clearcritical:0:5
+        cmdc:kickcritical:0:2
     direction:
       active: default
       strict: true
@@ -475,7 +473,7 @@ checks:
   moving:
     active: default
     creativefly:
-      active: default
+      active: false
       ignoreallowflight: true
       ignorecreative: false
       model:
@@ -582,7 +580,7 @@ checks:
           - tpyes
           - tphere
     survivalfly:
-      active: default
+      active: false
       stepheight: default
       extended:
         vertical-accounting: true
