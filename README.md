@@ -7,6 +7,9 @@ Based MC is a Minecraft anarchy server.
 
 ## PLugin list:
 - AEF (Anarchy Exploit Fixes) - https://github.com/moom0o/AnarchyExploitFixes
+- Vulcan - https://www.spigotmc.org/resources/vulcan-anti-cheat-advanced-cheat-detection-1-7-1-20-4.83626/
+- FreedomChat - https://github.com/ocelotpotpie/FreedomChat
+- Spark - https://github.com/lucko/spark
 - ESE (Essentials) - https://github.com/EssentialsX/Essentials/
 - LPC - https://github.com/wikmor/LPC
 - LP (LuckPerms) - https://github.com/LuckPerms/LuckPerms
