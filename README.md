@@ -1,13 +1,19 @@
+<div align="center">
+  
 # Based MC
-Based MC is a minecraft anarchy server.
-I made the configs public so you can see them and suggest changes
+Based MC is a Minecraft anarchy server.
+
+</div>
 
 ## PLugin list:
-- AEF - https://github.com/moom0o/AnarchyExploitFixes
-- Essentials - https://github.com/EssentialsX/Essentials/
+- AEF (Anarchy Exploit Fixes) - https://github.com/moom0o/AnarchyExploitFixes
+- ESE (Essentials) - https://github.com/EssentialsX/Essentials/
 - LPC - https://github.com/wikmor/LPC
-- LP - https://github.com/LuckPerms/LuckPerms
-- NCP - https://github.com/Updated-NoCheatPlus/NoCheatPlus
+- LP (LuckPerms) - https://github.com/LuckPerms/LuckPerms
+- NCP (No Cheat Plus) - https://github.com/Updated-NoCheatPlus/NoCheatPlus
 - TAB - https://github.com/NEZNAMY/TAB
 
-There are a few more but they dont have configs or just exist to make the list above work and dont change nothing in gameplay
+There are a few more, but they don't have configs, or just exist to make the list above work and don't change anything in gameplay.
+
+## License
+This repository is licensed under [GNU General Public License v3.0 (GPL-3.0)](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
