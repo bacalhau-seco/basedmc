@@ -28,8 +28,6 @@ header-footer:
       - an example of server with custom header
 tablist-name-formatting:
   enabled: true
-  align-tabsuffix-on-the-right: false
-  character-width-overrides: {}
   anti-override: true
   disable-condition: '%world%=disabledworld'
 scoreboard-teams:
@@ -38,7 +36,7 @@ scoreboard-teams:
   invisible-nametags: false
   anti-override: true
   sorting-types:
-  - GROUPS:based,og,default,retarded,banned1,banned2,banned3
+  - GROUPS:based,og,special,default,retarded,banned1,banned2,banned3
   - PLACEHOLDER_A_TO_Z:%player%
   case-sensitive-sorting: true
   can-see-friendly-invisibles: false
@@ -54,17 +52,15 @@ scoreboard-teams:
     - another
     static-lines:
       myCustomLine: 0.66
-yellow-number-in-tablist:
-  enabled: false
-  value: '%ping%'
-  disable-condition: '%world%=disabledworld'
 belowname-objective:
   enabled: false
   number: '%health%'
   text: '&cHealth'
   disable-condition: '%world%=disabledworld'
+  fancy-display-default: NPC
+  fancy-display-players: '&c%health%'
 prevent-spectator-effect:
-  enabled: false
+  enabled: true
 bossbar:
   enabled: false
   toggle-command: /bossbar
@@ -221,3 +217,8 @@ global-playerlist:
     - server2
 use-bukkit-permissions-manager: false
 use-online-uuid-in-tablist: true
+playerlist-objective:
+  enabled: false
+  value: '%ping%'
+  disable-condition: '%world%=disabledworld'
+  fancy-value: '&7Ping: %ping%'

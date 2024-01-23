@@ -32,18 +32,12 @@ data:
     history: false
   consistencychecks:
     active: true
-    interval: 5
+    interval: 10
     maxtime: 2
     suppresswarnings: false
 permissions:
   policy:
     default: ALWAYS
-    og: ALWAYS
-    based: ALWAYS
-    retarded: ALWAYS
-    banned1: ALWAYS
-    banned2: ALWAYS
-    banned3: ALWAYS
     rules:
     - 'nocheatplus.notify :: INTERVAL:60, -world, -offline'
     - 'nocheatplus.admin.debug :: INTERVAL:10'
@@ -114,7 +108,7 @@ checks:
         weight: 2.0
       actions: vl>10 log:bwrong:2:5:i cancel vl>30 cancel log:bwrong:0:5:if cmdc:kickwb:0:5
   blockinteract:
-    active: default
+    active: false
     direction:
       active: default
       actions: cancel vl>15 cancel log:bdirection:4:8:i vl>200 cancel log:bdirection:1:5:if
@@ -141,7 +135,7 @@ checks:
       skipempty: false
       actions: cancel vl>10 log:bautosign:0:3:if cancel
     direction:
-      active: default
+      active: false
       actions: cancel
     fastplace:
       active: false
@@ -345,7 +339,7 @@ checks:
     active: default
     canceldead: true
     maxloopletencyticks: 8
-    toolchangepenalty: 0
+    toolchangepenalty: 150
     pvp:
       knockbackvelocity: default
     yawrate:
@@ -353,9 +347,9 @@ checks:
     angle:
       active: default
       threshold:
-        average_move: 100
-        average_time: 150
-        average_yaw: 60
+        average_move: 90
+        average_time: 140
+        average_yaw: 55
         average_switch: 50
       actions: cancel vl>100 log:angle:6:5:i cancel vl>800 log:angle:0:20:if cancel
     critical:
@@ -368,7 +362,7 @@ checks:
       active: default
       strict: true
       failall: true
-      penalty: 75
+      penalty: 160
       actions: vl>2 log:fdirectionlowvl:5:6:i vl>10 cancel log:fdirection:2:4:if vl>50
         cancel log:fdirection:0:7:icf cmdc:kicksuspiciouscombat:1:5
     fastheal:
@@ -396,7 +390,7 @@ checks:
       penalty: 250
       reduce: true
       precision: true
-      reducedistance: 0.8
+      reducedistance: 0.9
       reducestep: 0.14
       improbable:
         feedonly: false
@@ -421,9 +415,9 @@ checks:
       active: default
       actions: cancel vl>30 log:fvisible:8:5:if cancel
   inventory:
-    active: false
+    active: true
     fastclick:
-      active: default
+      active: true
       exclude:
       - Inventory Name Here
       sparecreative: true
@@ -437,26 +431,26 @@ checks:
       actions: cancel vl>150 cancel log:fastclick:7:5:i vl>400 cancel log:fastclick:1:5:if
         vl>3000 cancel log:fastclick:1:2:if cmdc:kickfastclick:2:5
     instantbow:
-      active: default
+      active: true
       strict: true
-      delay: 75
+      delay: 129
       improbable:
         feedonly: false
         weight: 0.6
       actions: cancel vl>15 cancel log:instantbow:4:5:i vl>200 cancel log:instantbow:0:10:if
         cmdc:kickbow:2:10
     instanteat:
-      active: false
+      active: true
       actions: log:instanteat:2:5:i cancel
     fastconsume:
-      active: default
+      active: true
       duration: 1.4
       whitelist: false
       items: []
       actions: cancel vl>2 log:fastconsume:2:5:if cancel vl>35 cancel log:fastconsume:0:5:if
         cmdc:kickfastconsume:0:5
     inventorymove:
-      active: default
+      active: false
       disable_creative: true
       hdistdivisor: 4
       improbable:
@@ -468,16 +462,16 @@ checks:
       pagelimit: 50
       actions: cancel log:gutenberg:0:10:if cmdc:kickinvaliddata:0:5
     items:
-      active: default
+      active: true
     open:
-      active: default
+      active: true
       close: true
       cancelother: true
     hotfix:
       duplication:
         fallingblockendportal: true
   moving:
-    active: true
+    active: default
     creativefly:
       active: false
       ignoreallowflight: true
@@ -555,11 +549,11 @@ checks:
     nofall:
       active: true
       dealdamage: true
-      skipallowflight: true
+      skipallowflight: false
       resetonviolation: false
       resetonteleport: false
-      resetonvehicle: true
-      anticriticals: true
+      resetonvehicle: false
+      anticriticals: false
       actions: cancel vl>2 cancel log:nofall:0:5:if
     passable:
       active: default
@@ -586,7 +580,7 @@ checks:
           - tpyes
           - tphere
     survivalfly:
-      active: true
+      active: false
       stepheight: default
       extended:
         vertical-accounting: true

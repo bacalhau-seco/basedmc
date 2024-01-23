@@ -23,6 +23,7 @@ group-formats:
   default: "{displayname}&7:&r {message}"
   og: "{displayname}&7:&r {message}"
   based: "{displayname}&7:&r {message}"
+  special: "{displayname}&7:&r {message}"
   retarded: "&7{name}: {message}"
   banned1: "&8{name}: {message}"
   banned2: "&8{name}&7: {message}"
