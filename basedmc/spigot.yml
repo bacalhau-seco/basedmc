@@ -59,16 +59,17 @@ players:
   disable-saving: false
 world-settings:
   default:
+    seed-trialchambers: 94251327
     seed-trailruins: 83469867
     below-zero-generation-in-existing-chunks: true
     entity-activation-range:
-      animals: 24
-      monsters: 16
+      animals: 16
+      monsters: 32
       raiders: 16
       misc: 8
       water: 8
-      villagers: 16
-      flying-monsters: 16
+      villagers: 8
+      flying-monsters: 8
       wake-up-inactive:
         animals-max-per-tick: 2
         animals-every: 1200
@@ -88,9 +89,9 @@ world-settings:
       tick-inactive-villagers: false
       ignore-spectators: false
     entity-tracking-range:
-      display: 128
-      players: 48
-      animals: 48
+      display: 64
+      players: 64
+      animals: 32
       monsters: 48
       misc: 32
       other: 64
@@ -141,7 +142,7 @@ world-settings:
     arrow-despawn-rate: 300
     trident-despawn-rate: 4000
     zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: false
+    nerf-spawner-mobs: true
     enable-zombie-pigmen-portal-spawns: true
     wither-spawn-sound-radius: 0
     end-portal-sound-radius: 0
