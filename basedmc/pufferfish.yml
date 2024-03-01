@@ -38,3 +38,5 @@ flare:
   url: https://flare.airplane.gg
 web-services:
   token: ''
+enable-async-world-saving: true
+tps-catchup: true

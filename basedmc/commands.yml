@@ -2,15 +2,18 @@ command-block-overrides: []
 ignore-vanilla-permissions: false
 aliases:
   discord:
-  - echo &3https://discord.com/invite/XGhWPagpGV
+  - echo &bhttps://discord.com/invite/XGhWPagpGV
   vote:
-  - echo &3https://topminecraftservers.org/server/34560
+  - echo &ahttps://topminecraftservers.org/server/34560
   donate:
-  - echo &3https://ko-fi.com/F1F3OVWGY
+  - echo &ahttps://basedmc.fun/donate/
   website:
-  - echo &3https://basedmc.fun
+  - echo &ahttps://basedmc.fun
   links:
   - echo &b/discord
   - echo &6/vote
   - echo &6/donate
   - echo &b/website
+  colorcodes:
+  - echo add & before a leter or number
+  - echo &aa &bb &cc &dd &ee &ff &00 &11 &22 &33 &44 &55 &66 &77 &88 &99

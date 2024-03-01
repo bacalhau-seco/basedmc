@@ -51,7 +51,7 @@ hide-displayname-in-vanish: true
 change-displayname: true
 
 # This option will cause Essentials to show players' displaynames instead of usernames when tab completing Essentials commands.
-change-tab-complete-name: true
+change-tab-complete-name: false
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
@@ -603,7 +603,7 @@ tree-command-range-limit: 300
 register-back-in-listener: false
 
 #Delay to wait before people can cause attack damage after logging in.
-login-attack-delay: 5
+login-attack-delay: 0
 
 #Set the max fly speed, values range from 0.1 to 1.0
 max-fly-speed: 0.8
@@ -682,7 +682,7 @@ allow-selling-named-items: false
 # Delay for the MOTD display for players on join, in milliseconds.
 # This has no effect if the MOTD command or permission are disabled.
 # This can also be set to -1 to completely disable the join MOTD all together.
-delay-motd: 0
+delay-motd: 10000
 
 # A list of commands that should have their complementary confirm commands enabled by default.
 # This is empty by default, for the latest list of valid commands see the latest source config.yml.
@@ -701,15 +701,15 @@ jail-online-time: false
 
 # Set the timeout, in seconds for players to accept a tpa before the request is cancelled.
 # Set to 0 for no timeout.
-tpa-accept-cancellation: 120
+tpa-accept-cancellation: 60
 
 # The maximum number of simultaneous tpa requests that can be pending for any player.
 # Once past this threshold, old requests will instantly time out.
 # Defaults to 5.
-tpa-max-requests: 5
+tpa-max-requests: 1
 
 # Allow players to set hats by clicking on their helmet slot.
-allow-direct-hat: true
+allow-direct-hat: false
 
 # Allow in-game players to specify a world when running /broadcastworld.
 # If false, running /broadcastworld in-game will always send a message to the player's current world.
@@ -780,7 +780,7 @@ compass-towards-home-perm: false
 spawn-if-no-home: false
 
 # Should players be asked to provide confirmation for homes which they attempt to overwrite?
-confirm-home-overwrite: false
+confirm-home-overwrite: true
 
 ############################################################
 # +------------------------------------------------------+ #

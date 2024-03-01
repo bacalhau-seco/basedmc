@@ -183,19 +183,19 @@ checks:
     preventmisc:
       boatsanywhere: true
   chat:
-    active: false
+    active: true
     captcha:
-      active: 'false'
+      active: 'true'
       skip:
-        commands: false
-      characters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?><
+        commands: true
+      characters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
       length: 6
       question: '&c&l(!)&7 Please type ''&6[captcha]&7'' to continue using chat.'
-      success: '&c&l(!)&7 Antispam check passed.'
+      success: '&c&l(!)&7 slow down chat!.'
       tries: 3
       actions: cancel cmdc:kickcaptcha vl>4 log:captcha:2:5:cf cancel cmdc:kickcaptcha
     commands:
-      active: default
+      active: true
       exclusions:
       - undo
       - redo
@@ -222,21 +222,21 @@ checks:
       - reply
       - essentials:reply
       - ereply
-      level: 10
+      level: 3
       shortterm:
-        ticks: 18
-        level: 3
+        ticks: 20
+        level: 5
       actions: log:commands:0:5:cf cancel cmdc:kickcommands vl>20 log:commands:0:5:cf
         cancel cmdc:tempkick1
     text:
-      active: false
+      active: true
       allowvlreset: true
       frequency:
         normal:
           minimum: 0.0
-          factor: 0.9
-          weight: 6
-          level: 160
+          factor: 0.7
+          weight: 4
+          level: 150
           actions: cancel cmdc:tellchatnormal vl>7 log:chatnormal:0:5:cif cancel cmdc:tellchatnormal
             vl>20 log:chatnormal:0:5:cif cancel cmdc:kickchatnormal vl>40 log:chatnormal:0:5:cif
             cancel cmdc:kickchat5
@@ -244,7 +244,7 @@ checks:
           minimum: 2.0
           factor: 0.7
           weight: 3.0
-          level: 20.0
+          level: 25.0
           actions: log:chatfast:2:3:icf cancel cmdc:kickchatfast:0:5 vl>20 cancel
             log:chatfast:0:5:cif cmdc:kickchatfast vl>40 cancel log:chatfast:0:5:cif
             cmdc:kickchat1
@@ -254,7 +254,7 @@ checks:
         uppercase: 1.2
         afterjoin: 1.5
         nomoving: 1.1
-        repeatviolation: 2.0
+        repeatviolation: 1.0
         repeatglobal: 1.0
         repeatself: 1.5
         words:
@@ -279,8 +279,8 @@ checks:
         similarity:
           active: true
     warning:
-      active: false
-      level: 67
+      active: true
+      level: 80
       message: "\n  &c&l(!)&7 Please slow down chat, you might get kicked by the antispam.\n\
         \ \n"
       timeout: 10
@@ -288,8 +288,7 @@ checks:
       active: default
       timeout: 5000
       warning:
-        message: '&c&l(!)&7 You relogged really fast! If you keep doing that, you''re
-          going to be banned.'
+        message: '&c&l(!)&7 You relogged really fast!'
         number: 1
         timeout: 60000
       kickmessage: Too fast re-login, try with a little delay.
@@ -336,8 +335,8 @@ checks:
         feedonly: false
         weight: 90.0
   fight:
-    active: default
-    canceldead: true
+    active: true
+    canceldead: false
     maxloopletencyticks: 8
     toolchangepenalty: 150
     pvp:
@@ -345,7 +344,7 @@ checks:
     yawrate:
       active: true
     angle:
-      active: default
+      active: true
       threshold:
         average_move: 90
         average_time: 140
@@ -353,18 +352,18 @@ checks:
         average_switch: 50
       actions: cancel vl>100 log:angle:6:5:i cancel vl>800 log:angle:0:20:if cancel
     critical:
-      active: default
+      active: true
       falldistance: 0.075
       falldistleniency: 9.0E-4
       actions: vl>3 cancel log:critical:6:10:i vl>60 cancel log:critical:0:5:icf cmd:clearcritical:0:5
         cmdc:kickcritical:0:2
     direction:
-      active: default
+      active: true
       strict: true
       failall: true
       penalty: 160
-      actions: vl>2 log:fdirectionlowvl:5:6:i vl>10 cancel log:fdirection:2:4:if vl>50
-        cancel log:fdirection:0:7:icf cmdc:kicksuspiciouscombat:1:5
+      actions: vl>2 cancel log:fdirectionlowvl:5:6:i vl>10 cancel log:fdirection:2:4:if
+        vl>50 cancel log:fdirection:0:7:icf cmdc:kicksuspiciouscombat:1:5
     fastheal:
       active: default
       interval: 4000
@@ -372,7 +371,7 @@ checks:
       actions: cancel vl>10 cancel log:fastheal:2:6:i vl>30 cancel log:fastheal:1:1:i
         vl>90 cancel log:fastheal:0:10:if cmdc:kickfastheal:0:10
     godmode:
-      active: default
+      active: true
       minage: 1100
       maxage: 5000
       actions: cancel vl>10 cancel log:godmode:0:5:icf cmdc:kickgod:0:5
@@ -385,7 +384,7 @@ checks:
       active: default
       actions: vl>2 cancel vl>10 log:noswing:2:5:i cancel
     reach:
-      active: default
+      active: true
       survivaldistance: 4.02
       penalty: 250
       reduce: true
@@ -415,7 +414,7 @@ checks:
       active: default
       actions: cancel vl>30 log:fvisible:8:5:if cancel
   inventory:
-    active: true
+    active: false
     fastclick:
       active: true
       exclude:
@@ -473,9 +472,9 @@ checks:
   moving:
     active: default
     creativefly:
-      active: false
+      active: true
       ignoreallowflight: true
-      ignorecreative: false
+      ignorecreative: true
       model:
         creative:
           horizontal:
@@ -510,8 +509,8 @@ checks:
               speed: 0
             maxheight: 200
             gravity: false
-          modifiers: true
-          ground: true
+          modifiers: false
+          ground: false
         riptiding:
           horizontal:
             speed: 700
@@ -522,18 +521,18 @@ checks:
           modifiers: false
         elytra:
           horizontal:
-            speed: 666
+            speed: 420
             modsprint: 1.0
           vertical:
             ascend:
-              speed: 0
-            maxheight: 200
+              speed: 250
+            maxheight: 350
           modifiers: false
           resetFwOnground: false
           strict: false
-      actions: cancel log:flyfile:3:5:f vl>100 cancel log:creativefly:8:9:i log:flyfile:0:10:f
-        vl>900 cancel log:creativefly:2:4:i log:flyfile:0:5:cf vl>2000 cancel log:creativefly:0:5:icf
-        cmdc:kickfly:0:15
+      actions: vl>60 cancel log:flyfile:3:5:f vl>100 cancel log:creativefly:8:9:i
+        log:flyfile:0:10:f vl>900 cancel log:creativefly:2:4:i log:flyfile:0:5:cf
+        vl>2000 cancel log:creativefly:0:5:icf cmdc:kickfly:0:15
     morepackets:
       active: default
       seconds: 6
@@ -549,7 +548,7 @@ checks:
     nofall:
       active: true
       dealdamage: true
-      skipallowflight: false
+      skipallowflight: true
       resetonviolation: false
       resetonteleport: false
       resetonvehicle: false
@@ -580,13 +579,13 @@ checks:
           - tpyes
           - tphere
     survivalfly:
-      active: false
+      active: true
       stepheight: default
       extended:
         vertical-accounting: true
         horizontal-accounting: true
         step-accounting: true
-        noslow: true
+        noslow: false
         reset-activeitem: true
       leniency:
         hbufmax: 1.0

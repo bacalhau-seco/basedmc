@@ -36,7 +36,7 @@ scoreboard-teams:
   invisible-nametags: false
   anti-override: true
   sorting-types:
-  - GROUPS:based,og,special,default,retarded,banned1,banned2,banned3
+  - GROUPS:based-lord,based,og,special,default,retarded,banned1,banned2,banned3
   - PLACEHOLDER_A_TO_Z:%player%
   case-sensitive-sorting: true
   can-see-friendly-invisibles: false
