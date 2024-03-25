@@ -1,0 +1,349 @@
+# Enable Update Messages: enables update messages
+enable-update-messages: false
+
+# To use hex colors: &#hex
+# PvP Messages: sends a message to the killer and victim when a player is killed by another player.
+# Placeholders for pvp messages: %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+enable-pvp-messages: false
+killer-message: '&e[&cDeathMessages&e] &eYou killed &c%victim%'
+victim-message: '&e[&cDeathMessages&e] &eYou were killed by &c%killer%'
+
+# Lightning: lightning strike effect at the location of the death.
+enable-lightning: false
+
+# Drop head percentage: chance to drop head, should be a number between 0 and 1: (0 = 0%, 0.5 = 50%, 1 = 100%)
+# Head name: name of the head whenever dropped from a player.
+drop-head-percentage: 0.001
+head-name: '&c%victim%''s Head'
+
+# Message cooldown: cooldown in seconds between death messages for a specific player. 0 to disable.
+message-cooldown: 0
+
+# Enable Global Messages: enables global death messages
+enable-global-messages: true
+
+# Original on Hover: show the original death message when hovering over the custom message.
+enable-original-on-hover: false
+
+# Item on Hover: show the item used to kill the player when hovering over the item name.
+enable-item-on-hover: false
+
+# You can add, edit, or remove any of the messages below.
+# Placeholders for melee messages: %kill-weapon%, %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+global-pvp-death-messages:
+- '&c%victim-nick% &ehas been killed by &c%killer-nick% &eusing &b%kill-weapon%'
+- '&c%victim-nick% &ewas slain by &c%killer-nick% &eusing &b%kill-weapon%'
+- '&c%victim-nick% &ehas been put down by &c%killer-nick% &eusing &b%kill-weapon%'
+- '&c%victim-nick% &ewas slaughtered by &c%killer-nick% &eusing &b%kill-weapon%'
+- '&c%killer-nick% &epulverized &c%victim% &eusing &b%kill-weapon%'
+- '&c%victim-nick% &ewas destroyed by &c%killer-nick%&e'
+- '&c%killer-nick% &egave &c%victim-nick% &ethe L with &b%kill-weapon%'
+- '&c%victim-nick% &ewas clapped by &c%killer-nick% &eusing &b%kill-weapon%'
+
+# Placeholders for melee messages: %victim%, %victim-nick%, %killer%, %killer-nick%, %killer-x%, %killer-y%, %killer-z%, %victim-x%, %victim-y%, %victim-z%
+melee-death-messages:
+- '&c%victim-nick% &ewas slapped by &c%killer-nick%'
+- '&c%victim-nick% &ewas KO''d by &c%killer-nick%'
+- '&c%victim-nick% &egot fucked to death by &c%killer-nick%'
+
+
+
+# Messages for entities with custom names: will override their mob group message and display these instead, if enabled.
+# Placeholders: %victim%, %victim-nick%, %entity-name%, %victim-x%, %victim-y%, %victim-z%
+enable-custom-name-entity-messages: true
+custom-name-entity-messages:
+- '&c%victim% &egot rocked by %entity-name%'
+- '&c%victim% &ewas put to sleep by %entity-name%'
+- '&c%entity-name% &eate &c%victim%''s &esoul'
+- '&c%victim% &edied while fighting %entity-name%'
+
+# Placeholders for ALL below messages: %victim%, %victim-nick%, %entity-name%, %victim-x%, %victim-y%, %victim-z%
+fall-damage-messages:
+- '&c%victim-nick% &efucking died'
+- '&c%victim-nick% &efell from a high spot'
+- '&c%victim-nick% &e didn''t want to live anymore'
+- '&c%victim-nick% &eforgot to turn on no-fall'
+
+drowning-messages:
+- '&c%victim-nick% &edoesn''t know how to breathe underwater'
+- '&c%victim-nick% &eskipped the swiming lessons'
+
+suffocation-messages:
+- '&c%victim-nick% &ewas inside your walls'
+- '&c%victim-nick% &ewas burried alive!'
+
+cramming-messages:
+- '&c%victim-nick% &egot crushed and couldn''t breathe'
+- '&ePoor &c%victim-nick%&e, they thought they could live in a 1x1 space'
+
+thorns-messages:
+- '&c%victim-nick% &egot karma''d by &c%killer%''s &ethorns'
+- '&c%victim-nick% &egot the tables turned on them by &c%killer%''s &ethorns'
+
+lava-messages:
+- '&c%victim-nick% &eburned up in a pit of lava'
+- '&c%victim-nick% &ethought that lava was a hot tub'
+
+magma-block-messages:
+- '&c%victim-nick% &ewas cooked by a magma block'
+- '&c%victim-nick%''s &efeet were made into bacon by a &6magma block'
+
+elytra-messages:
+- '&c%victim-nick% &eflew into a wall and died'
+- '&c%victim-nick% &eflew into a building a exploded!'
+- '&c%victim-nick% &egot slammed into a wall by his elytra'
+
+wither-messages:
+- '&c%victim-nick% &egot the wither disease'
+- '&c%victim-nick% &ewithered away to the 4th dimension'
+- '&c%victim-nick% &eforgot to /vote and died to The Wither'
+
+suicide-messages:
+- '&c%victim-nick% &ethought "kys" was good suggestion'
+- '&c%victim-nick% &ehad a mental breakdown and died'
+
+fire-messages:
+- '&c%victim-nick% &egot real cooked up'
+- '&c%victim-nick% &eplayed with fire'
+
+fire-tick-messages:
+- '&c%victim-nick% &edecided to see what hell looks like'
+
+starvation-messages:
+- '&c%victim-nick% &eforgot to eat'
+- '&c%victim-nick%''s &ewent vegan'
+
+cactus-messages:
+- '&c%victim-nick% &ewas pricked to death'
+- '&c%victim-nick% &etried acupuncture, but died'
+- '&c%victim-nick% &edied to a plant lmao'
+
+potion-messages:
+- '&c%victim-nick% &edied of black magic'
+- '&c%victim-nick% &edied to a funny looking liquid'
+
+void-messages:
+- '&c%victim-nick% &efell into the fall that never ends... And ended his life.'
+- '&c%victim-nick% &ejumped into nothing'
+
+lightning-messages:
+- '&c%victim-nick% &ewas hit by Herobrine'
+- '&c%victim-nick% &ewas struck down by Herobrine'
+- '&c%victim-nick% &ewas killed by Herobrine'
+
+falling-block-messages:
+- '&c%victim-nick% &ewas crushed by a falling block'
+
+freeze-messages:
+- '&c%victim-nick% &efroze to death. &b&lBrrrrr!'
+- '&c%victim-nick% &eforgot his winter jacket'
+
+firework-messages:
+- '&c%victim-nick% &eexploded into colorfull litle pieces'
+- '&c%victim-nick% &ewent out with a bang'
+- '&c%victim-nick% &eblasted off into space'
+
+slime-messages:
+- '&c%victim-nick% &ewas crushed by a GIANT SLIME'
+- '&c%victim-nick% &ewas slimed to death while collecting slime balls'
+
+zombie-messages:
+- '&c%victim-nick% &ewas eaten alive by a Zombie'
+- '&c%victim-nick% &edied to a simple Zombie'
+
+pigman-messages:
+- '&c%victim-nick% &eaggroed the Pigmen &eand got eaten alive'
+
+skeleton-messages:
+- '&c%victim-nick% &egot sniped by a bony Skeleton'
+- '&c%victim-nick% &egot shot by a Skeleton'
+
+magmacube-messages:
+- '&c%victim-nick% &egot crushed by a GIANT MAGMA CUBE'
+
+husk-messages:
+- '&c%victim-nick% &egot eaten by a Husk'
+
+spider-messages:
+- '&c%victim-nick% &ewas steped on by a spider!'
+
+cavespider-messages:
+- '&c%victim-nick% &egot bitten to death by a Cave Spider'
+
+witherskeleton-messages:
+- '&c%victim-nick% &egot destroyed by a &f&lWither Skeleton &ewith a stone sword'
+
+witherboss-messages:
+- '&c%victim-nick% &egot his head blown off by a Wither'
+- '&c%victim-nick% &egot a Wither skull to the face'
+
+
+dragon-messages:
+- '&c%victim-nick% &egot his guts ripped out by the Ender Dragon'
+- '&c%victim-nick% &egot his head blown off by the Ender Dragon'
+
+dragon-breath-messages:
+- '&c%victim-nick% &etook a bath in the Ender Dragon''s &ebreath'
+- '&c%victim-nick% &etook a deep breath of the Ender Dragon''s &e(nasty)'
+
+elderguardian-messages:
+- '&c%victim-nick% &etried to clear a ocean monument but the &7&lElder Guardian &esaid no'
+
+tnt-messages:
+- '&c%victim-nick% &egot his head blown off by TNT'
+- '&c%victim-nick% &egot blown up by TNT'
+- '&eBOOM! &c%victim-nick% &efound out about explosives the hard way'
+- '&c%victim% &eignored the "dont try this at home" warning and blew up.'
+
+end-crystal-messages:
+- '&c%victim-nick% &egot pieced by an End Crystal'
+- '&c%victim-nick% &egot blown up by an End Crystal'
+
+creeper-messages:
+- '&c%victim-nick% &egot blown up by a Creeper'
+- '&c%victim-nick% &egot blown up by a Suicide Bomber'
+- '&c%victim-nick% &esuffered the fate of &aHiroshima and Nagasaki'
+
+ghast-messages:
+- '&c%victim-nick% &egot fireballed by a Ghast'
+
+enderman-messages:
+- '&c%victim-nick% &egot killed by a really tall black man'
+
+silverfish-messages:
+- '&c%victim-nick% &egot eaten by a Silverfish'
+
+witch-messages:
+- '&c%victim-nick% &edied to a Witch named Scarlett'
+
+shulker-messages:
+- '&c%victim-nick% &edied trying to get some Shulker &eshells'
+- '&c%victim-nick% &egot shot by a Shulker'
+- '&c%victim-nick% &eis levitanting'
+
+guardian-messages:
+- '&c%victim-nick% &egot killed by a giant ass fish!!'
+
+golem-messages:
+- '&c%victim-nick% &emade an Iron Golem &emad'
+
+zombievillager-messages:
+- '&c%victim-nick% &ewas made dinner of by a Zombie Villager'
+
+endermite-messages:
+- '&c%victim-nick% &egot eaten by an Endermite'
+
+phantom-messages:
+- '&c%victim-nick% &ewas kidnapped by a Phantom'
+
+drowned-messages:
+- '&c%victim-nick% &ewent for a late night swim and got eaten by a Drowned Zombie'
+
+pillager-messages:
+- '&c%victim-nick% &egot shot by a Pillager'
+
+ravager-messages:
+- '&c%victim-nick% &egot rammed by a Ravager'
+
+illusioner-messages:
+- '&c%victim% &ewas sent to the illusion world by an Illusioner'
+- '&c%victim% &ewas tricked by an &7&lIllusioner'
+- '&c%victim% &ewas killed by an &7&lIllusioner'
+
+bee-messages:
+- '&c%victim-nick% &ewas stung by a &lBEE'
+
+wolf-messages:
+- '&c%victim-nick% &ewas ripped apart by a Wolf'
+- '&c%victim-nick% &eprovoked a Wolf'
+
+llama-messages:
+- '&c%victim-nick% &ewas spit to death by a Llama'
+- '&c%victim-nick% &ecould not handle being spat on by a Llama'
+
+blaze-messages:
+- '&c%victim-nick% &ewas charred by a Blaze'
+- '&c%victim-nick% &ewas turned into charcoal by a Blaze'
+
+stray-messages:
+- '&c%victim-nick% &ewas domed by a Stray'
+
+vex-messages:
+- '&c%victim-nick% &ewas eaten by a tiny flying Vex'
+- '&c%victim-nick% &egot vexed by a Vex'
+
+vindicator-messages:
+- '&c%victim-nick% &ewas hunted down by a Vindicator'
+- '&c%victim-nick% &egot choped into pices by Vindicator'
+
+evoker-messages:
+- '&c%victim-nick% &ewas summoned to the dead by an Evoker'
+- '&c%victim-nick% &etried the wrath of an Evoker'
+- '&c%victim-nick% &ewas evoked by an Evoker'
+
+pufferfish-messages:
+- '&c%victim-nick% &edied to a Pufferfish...'
+
+polar-bear-messages:
+- '&c%victim-nick% &ewas murdered by a Polar Bear'
+- '&c%victim-nick% &egot turned to snow by a Polar Bear'
+
+dolphin-messages:
+- '&c%victim-nick% &eprovoked a Dolphin... and lost?'
+- '&c%victim-nick% &ehit a Dolphin and died'
+
+panda-messages:
+- '&c%victim-nick% &ewas made into a Pandas dinner'
+- '&c%victim-nick% &etried stealing a Pandas bamboo'
+
+piglin-messages:
+- '&c%victim-nick% &emet his maker against the new Piglins'
+- '&c%victim-nick% &emade the Piglins mad. I mean, we warned you, don''t steal from them...'
+- '&c%victim-nick% &emisses Zombie Pigmen and died to nostalgia'
+
+hoglin-messages:
+- '&c%victim-nick% &ewas charged by a Hoglin'
+- '&c%victim-nick% &ewas eaten by a nether pig'
+
+zoglin-messages:
+- '&cvictim-nick% &eate a Zoglins horn for dinner'
+- '&c%victim-nick% &ewas rammed by a Zoglin'
+
+goat-messages:
+- '&c%victim-nick% &ewas headbutted by a Goat'
+- '&c%victim-nick% &ewas impaled by a Goat horn'
+
+zombified-piglin-messages:
+- '&c%victim-nick% &etook a Piglin to the overworld and got brutally riped appart by their corpse...'
+- '&c%victim-nick% &edied to a Zombiefied Piglin'
+
+fox-messages:
+- '&c%victim-nick% &efoxed around and found out'
+- '&c%victim-nick% &ewas chewed up by a Fox'
+
+warden-messages:
+- '&c%victim-nick% &ewas killed by a Warden... keep it silent next time'
+- '&eA Warden protected the Deep Dark from &c%victim-nick%'
+
+warden-sonic-boom-messages:
+- '&cvictim-nick% &ewas sonic boomed by a Warden'
+- '&c%victim-nick% &eexperienced Warden''s new album'
+
+# This is for any messages that haven't been added, so if you die to a cause which doesn't have any messages,
+# one of these messages will display instead. (Please report any missing messages in my spigot discussion)
+unknown-messages:
+- '&c%victim-nick% &edied to unknown causes'
+- '&c%victim-nick% &edied'
+- '&c%victim-nick% &ewas killed'
+
+fireball-messages:
+- '&c%victim-nick% &ewas fireballed until they burnt to death'
+
+arrow-messages:
+- '&c%victim-nick% &elooked like a porcupine after getting shot to death'
+
+# Only here to help me debug my plugin, not suggested you enable.
+developer-mode: false
+
+# Config version, do not change this.
+config-version: 2

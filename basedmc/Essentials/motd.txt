@@ -1,0 +1,5 @@
+&6Welcome, {PLAYER}&6
+&cBased MC needs your support!
+&cGet permanent rewards and support the server!
+&cdo &6/donate&c to dupport the server and get &6rewards
+&7this message wont apear after you donate.
