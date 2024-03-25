@@ -1775,7 +1775,7 @@ checks:
         punishable: true
         discord-alert-interval: 1
         broadcast-punishment: false
-        max-violations: 1
+        max-violations: 2
         alert-interval: 1
         dont-alert-until: 1
         maximum-ping: 100000
@@ -1792,7 +1792,7 @@ checks:
         punishable: true
         discord-alert-interval: 1
         broadcast-punishment: false
-        max-violations: 1
+        max-violations: 3
         alert-interval: 1
         dont-alert-until: 1
         maximum-ping: 100000
@@ -1806,7 +1806,7 @@ checks:
         max-angle: 45
     velocity:
       a:
-        enabled: true
+        enabled: false
         punishable: true
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1822,7 +1822,7 @@ checks:
           multiple: 0.25
           decay: 0.075
       b:
-        enabled: true
+        enabled: false
         punishable: true
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1838,7 +1838,7 @@ checks:
           multiple: 0.35
           decay: 0.125
       c:
-        enabled: true
+        enabled: false
         punishable: true
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1854,7 +1854,7 @@ checks:
           multiple: 0.25
           decay: 0.175
       d:
-        enabled: true
+        enabled: false
         punishable: true
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1872,7 +1872,7 @@ checks:
   movement:
     noslow:
       a:
-        enabled: true
+        enabled: false
         punishable: false
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1888,7 +1888,7 @@ checks:
           multiple: 0.25
           decay: 0.15
       b:
-        enabled: true
+        enabled: false
         punishable: false
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1904,7 +1904,7 @@ checks:
           multiple: 0.25
           decay: 0.075
       c:
-        enabled: true
+        enabled: false
         punishable: false
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1920,7 +1920,7 @@ checks:
           multiple: 0.25
           decay: 0.15
       d:
-        enabled: true
+        enabled: false
         punishable: false
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -1936,7 +1936,7 @@ checks:
           multiple: 0.25
           decay: 0.15
       e:
-        enabled: true
+        enabled: false
         punishable: false
         discord-alert-interval: 1
         broadcast-punishment: false
@@ -3268,7 +3268,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 2
           multiple: 0.5
@@ -3284,7 +3284,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       c:
         enabled: true
         punishable: true
@@ -3296,7 +3296,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       d:
         enabled: true
         punishable: true
@@ -3308,7 +3308,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 3
           multiple: 0.25
@@ -3324,7 +3324,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       f:
         enabled: true
         punishable: true
@@ -3336,7 +3336,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       g:
         enabled: true
         punishable: false
@@ -3348,7 +3348,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       h:
         enabled: true
         punishable: true
@@ -3360,7 +3360,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       i:
         enabled: true
         punishable: true
@@ -3372,7 +3372,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       j:
         enabled: true
         punishable: true
@@ -3384,7 +3384,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       k:
         enabled: true
         punishable: true
@@ -3396,7 +3396,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 3
           multiple: 0.5
@@ -3412,7 +3412,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 5
           multiple: 0.33
@@ -3444,7 +3444,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 3
           multiple: 0.5
@@ -3460,7 +3460,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 3
           multiple: 0.5
@@ -3476,7 +3476,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 3
           multiple: 0.5
@@ -3492,7 +3492,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 6
           multiple: 0.5
@@ -3508,7 +3508,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       t:
         enabled: true
         punishable: true
@@ -3520,7 +3520,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       u:
         enabled: true
         punishable: true
@@ -3532,7 +3532,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       v:
         enabled: true
         punishable: true
@@ -3544,7 +3544,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 8
           multiple: 0.5
@@ -3561,7 +3561,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 8
           multiple: 0.5
@@ -3577,7 +3577,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 6
           multiple: 0.5
@@ -3593,7 +3593,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       z:
         enabled: true
         punishable: true
@@ -3605,7 +3605,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       '1':
         enabled: true
         punishable: true
@@ -3617,7 +3617,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 12
           multiple: 0.25
@@ -3633,7 +3633,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 12
           multiple: 0.25
@@ -3649,7 +3649,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 4
           multiple: 0.25
@@ -3665,7 +3665,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
       '6':
         enabled: true
         punishable: true
@@ -3677,7 +3677,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 3
           multiple: 0.25
@@ -3693,7 +3693,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 19.0
         punishment-commands:
-        - tempban %player% 5 bad packets
+        - kick %player% bad packets
         buffer:
           max: 15
           multiple: 0.25
