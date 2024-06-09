@@ -125,7 +125,7 @@ entities:
     zombies-target-turtle-eggs: true
   entities-target-with-follow-range: false
   markers:
-    tick: true
+    tick: false
   mob-effects:
     immune-to-wither-effect:
       wither: true
@@ -145,20 +145,20 @@ entities:
     creative-arrow-despawn-rate: default
     despawn-ranges:
       ambient:
-        hard: 32
+        hard: 48
         soft: 16
       axolotls:
-        hard: 32
+        hard: 64
         soft: 16
       creature:
-        hard: 32
+        hard: 64
         soft: 16
       misc:
-        hard: 32
+        hard: 48
         soft: 16
       monster:
-        hard: 32
-        soft: 24
+        hard: 64
+        soft: 16
       underground_water_creature:
         hard: 32
         soft: 16
@@ -166,7 +166,7 @@ entities:
         hard: 32
         soft: 16
       water_creature:
-        hard: 32
+        hard: 48
         soft: 16
     disable-mob-spawner-spawn-egg-transformation: false
     duplicate-uuid:
@@ -192,10 +192,10 @@ entities:
         maximum: 70.0
         minimum: 50.0
     spawn-limits:
-      ambient: 3
+      ambient: 5
       axolotls: 5
       creature: 5
-      monster: 40
+      monster: 20
       underground_water_creature: 3
       water_ambient: 3
       water_creature: 5
@@ -307,7 +307,7 @@ tick-rates:
   container-update: 1
   dry-farmland: 1
   grass-spread: 1
-  mob-spawner: 3
+  mob-spawner: 2
   sensor:
     villager:
       secondarypoisensor: 40
